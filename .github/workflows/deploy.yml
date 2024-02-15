@@ -31,8 +31,8 @@ jobs:
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
     
-            sudo systemctl restart nginx
-            sudo systemctl enable nginx
+            systemctl restart nginx.service
+            systemctl enable nginx.service
             cd home
             sudo mv * /var/www/html
             
