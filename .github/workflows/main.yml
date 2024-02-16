@@ -34,6 +34,10 @@ jobs:
             sudo systemctl restart nginx.service
             sudo systemctl enable nginx.service
             cd home
-            sudo mv -f * /var/www/html
-
+            sudo mv -f -- * /var/www/html
+            port: 22
+            timeout: 30s
+            command_timeout: 10m
+            proxy_port: 22
+            proxy_timeout: 30s
            
