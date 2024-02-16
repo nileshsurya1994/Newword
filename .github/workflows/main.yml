@@ -33,6 +33,6 @@ jobs:
     
             systemctl restart nginx.service
             systemctl enable nginx.service
-            cd /home
+            cd home
             sudo mv * /var/www/html
             
