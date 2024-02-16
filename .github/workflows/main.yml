@@ -35,4 +35,4 @@ jobs:
             sudo systemctl enable nginx.service
             cd home
             sudo mv * /var/www/html
-            
+            chown -R root:root /var/www/html/*
