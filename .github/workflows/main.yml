@@ -34,5 +34,6 @@ jobs:
             sudo systemctl restart nginx.service
             sudo systemctl enable nginx.service
             cd home
-            sudo mv * /var/www/html
+            sudo mv -f * /var/www/html
+
            
