@@ -23,16 +23,12 @@ jobs:
           REMOTE_USER: ${{ secrets.USERNAME }}
           TARGET: ${{ secrets.TARGET_DIR }}
 
-      - name: Executing remote ssh commands using ssh key
+      - name: Update code in /var/www/html/mywebsite
         uses: appleboy/ssh-action@master
         with:
           host: ${{ secrets.HOST_DNS }}
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-    
-            systemctl restart nginx.service
-            systemctl enable nginx.service
-            cd home
-            sudo mv * /var/www/html
-            
+            cd /var/www/html/mywebsite
+            sudo git pull origin main
