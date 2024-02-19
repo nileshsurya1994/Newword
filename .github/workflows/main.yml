@@ -33,5 +33,5 @@ jobs:
             sudo systemctl restart nginx.service
             sudo systemctl enable nginx.service
             cd home
-            sudo cp -r /home/* /var/www/html/mywebsite/
+            sudo cp -rf /var/www/html/mywebsite/
           
