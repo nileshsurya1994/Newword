@@ -28,9 +28,9 @@ jobs:
         with:
           host: ${{ secrets.HOST_DNS }}
           username: ${{ secrets.USERNAME }}
-          key: ${{ secrets.EC2_SSH_KEY }}/var/www/html/mywebsite
+          key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-            sudo systemctl restart nginx.service/var/www/html/mywebsite
+            sudo systemctl restart nginx.service
             sudo systemctl enable nginx.service
             cd home
             mv * /var/www/html/mywebsite
