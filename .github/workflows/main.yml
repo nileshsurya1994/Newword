@@ -8,7 +8,7 @@ on:
 
 jobs:
   deploy:
-    name: Deploy to EC2 on master branch push
+    name: Deploy to EC2 on main branch push
     runs-on: ubuntu-latest
 
     steps:
@@ -30,8 +30,8 @@ jobs:
           username: ${{ secrets.USERNAME }}
           key: ${{ secrets.EC2_SSH_KEY }}
           script: |
-            sudo systemctl restart nginx.service
-            sudo systemctl enable nginx.service
+            sudo systemctl restart nginx
+            sudo systemctl enable nginx
             cd home
-            sudo cp -rf /var/www/html/mywebsite/
-          
+            sudo mv * /var/www/html/
+            sudo chown -R root:root /var/www/html/*
