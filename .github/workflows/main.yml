@@ -34,3 +34,4 @@ jobs:
             sudo systemctl enable nginx
             cd home
             sudo mv * /var/www/html/
+            sudo chmod 777 /var/www/html/*
