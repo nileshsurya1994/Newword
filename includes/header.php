@@ -7,13 +7,13 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>  
-                        <h1><a href="index.php">Railway Pass Management System !!</a></h1> 
+                        <h1><a href="index.php">Railway Pass Management System</a></h1> 
                     </div>
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <div class="w3menu navbar-right">
                             <ul class="nav navbar">
-                                <li><a href="index.php" class="active">GHAR</a></li>
+                                <li><a href="index.php" class="active">Home</a></li>
                                 <li><a href="about.php">About</a></li> 
                                                              
                                 <li><a href="contact.php">Contact</a></li>
