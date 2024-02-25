@@ -13,7 +13,7 @@
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <div class="w3menu navbar-right">
                             <ul class="nav navbar">
-                                <li><a href="index.php" class="active">Home</a></li>
+                                <li><a href="index.php" class="active">GHAR</a></li>
                                 <li><a href="about.php">About</a></li> 
                                                              
                                 <li><a href="contact.php">Contact</a></li>
